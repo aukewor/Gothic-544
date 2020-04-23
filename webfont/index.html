@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gothic No. 544</title>
+    <style media="screen">
+      @font-face {
+        font-family: 'gothic_544_regularregular';
+        src: url('gothic544-april21-webfont.woff2') format('woff2'),
+             url('gothic544-april21-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        font-family: 'gothic_544_regularregular';
+        background-color: black;
+        color: white;
+      }
+
+      ::selection {
+        color: transparent;
+        text-shadow: 0 0 10px rgba(255,255,255,0.75);
+        background: black;
+      }
+
+      .soundbutton {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+        padding: 5px 8px 5px 8px;
+        font-size: 14px;
+
+      }
+
+      .soundbutton:hover {
+        border: 0.5px solid white;
+        border-radius: 12px;
+        /* background-color: black; */
+        color: white;
+      }
+      .soundbutton:active {
+        background-color: white;
+        color: black;
+      }
+
+      .large {
+        font-size: 144px;
+        letter-spacing: -0.03em;
+        line-height: 1.05;
+        margin: 60px auto auto 20px;
+        text-align: center;
+        padding-bottom: 120px;
+
+      }
+
+      .caption {
+        margin: auto;
+        padding-bottom: 200px;
+        width: 50vw;
+        text-align: center;
+        font-size: 24px;
+        letter-spacing: 0.02em;
+        line-height: 1.4;
+      }
+
+      a {
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <audio id="myAudio" src="ABC.mp3" preload="auto">
+    </audio>
+    <a class="soundbutton" onClick="togglePlay()">SOUND ON | OFF</a>
+
+
+    <div class="large">
+      <!-- <p> -->
+      * * * <br>
+      A is for apple <br>
+      B is for ball <br>
+      C candle<br>
+      D is for door<br>
+      E is for egg<br>
+      F is for fall<br>
+      G is for grass<br>
+      H is for hall<br>
+      I is for ice<br>
+      J is for jam<br>
+      K is for kite<br>
+      L is for lamb<br>
+      Mmmmmmmmm<br>
+      M moonlight<br>
+      N night<br>
+      O orange<br>
+      P is for pie<br>
+      Q is for queen<br>
+      R is for rain<br>
+      S is for smile<br>
+      T is for train<br>
+      Mmmmmmmmm<br>
+      U umbrella<br>
+      V is for vell<br>
+      W is for whale<br>
+      X x-ray<br>
+      Y yo yo<br>
+      Z is for zero<br>
+      Mmmmmmmmm <br>
+      * * *
+      </p>
+
+      <p style="font-size: 24px; letter-spacing: 0.02em;">    Large Char desktop screen 144px
+</p>
+    </div>
+
+
+    <div class="caption">
+      Gothic No. 544 <br>by American Type Founders, 1889.<br>
+      Digitalized Revival by Mianwei Wang in Type Design, Spring 2020, Yale School of Art.
+      <a href="http://typedesign.yaleschoolofart.org/mianwei-wang/">More info</a>
+
+      <br><br><br><br>
+      <!-- &#x3c;ABC&#62; -->
+      <div style="transform:skewX(-10deg); ">ABC
+</div>
+      published in 2009, by Kaori Mochida 持田香織
+    </div>
+
+    <script>
+      var myAudio = document.getElementById("myAudio");
+      var isPlaying = false;
+
+      function togglePlay() {
+      if (isPlaying) {
+       myAudio.pause()
+      } else {
+       myAudio.play();
+      }
+      };
+      myAudio.onplaying = function() {
+      isPlaying = true;
+      };
+      myAudio.onpause = function() {
+      isPlaying = false;
+      };
+    </script>
+
+  </body>
+</html>
